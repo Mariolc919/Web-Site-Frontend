@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="StyleSheet" href="Multimedia.css" type="text/css"/>
+    <link rel=StyleSheet href="../fonts/Fuentes.css" type="text/css"/>
+    <link rel=StyleSheet href="../Index/menu.css" type="text/css"/>
+    <link  rel="shortcut icon" href="../img/icono.ico"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="main.js"></script>
+    <meta charset="utf-8">
+    <title>Multimedia</title>
+
+    <script>
+    $(function(){
+    $('a[href*=#]').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+    && location.hostname == this.hostname) {
+    var $target = $(this.hash);
+    $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+    if ($target.length) {
+    var targetOffset = $target.offset().top;
+    $('html,body').animate({scrollTop: targetOffset}, 800);
+    return false;
+    }
+    }
+    });
+    });
+    </script>
+  </head>
+  <body>
+
+    <header>
+        <nav role="navigation">
+            <div id="menuToggle">
+    
+              <input type="checkbox" />
+    
+               <span></span>
+               <span></span>
+               <span></span>
+    
+            <ul id="menu">
+              <a href="../index.html"><li>Inicio</li></a>
+              <a href="Multimedia.html"><li>Multimedia</li></a>
+              <a href="../Obras/Obras.html"><li>Obras</li></a>
+              <a href="../Tienda/Tienda.html"><li>Tienda</li></a>
+              <a href="../Proyectos/Proyectos.html"><li>Proyectos</li></a>
+              <a href="../Contacto/Contacto.html"><li>Contacto</li></a>
+            </ul>
+          </div>
+        </nav>
+
+         <nav class="Menuh">
+             <ul>
+                 <li><a href="../index.html" class="active">Inicio</a></li>
+                 <li><a href="../index.html#Quiensoy">Qui&eacute;n Soy?</a></li>
+                 <li class="submenu">
+                     <a href="../Multimedia/Multimedia.html">Multimedia</a>
+                     <ul class="children">
+                         <li><a href="../Multimedia/Multimedia.html#Youtube">Youtube</a></li><br>
+                         <li><a href="../Multimedia/Multimedia.html#Facebook">Facebook</a></li><br>
+                         <li><a href="../Multimedia/Multimedia.html#Instagram">Instagram</a></li><br>
+                     </ul>
+                 </li>
+                 <li><a href="../Obras/Obras.html">Obras</a></li>
+                 <li><a href="../Tienda/Tienda.html">Tienda</a></li>
+                 <li class="submenu">
+                     <a href="../Proyectos/Proyectos.html">Proyectos</a>
+                     <ul class="children">
+                         <li><a href="../Proyectos/Proyectos.html#Exposiciones">Exposiciones</a></li>
+                     </ul>
+                 </li>
+                 <li><a href="../Contacto/Contacto.html">Contacto</a></li>
+             </ul>
+         </nav>
+     </header>
+
+
+    <div class="cajatitulo">
+     <h1 class="titulo">MULTIMEDIA</h1>
+    </div>
+
+    <div class="cajapintura">
+
+    </div>
+
+
+    <div class="BOX" id="Youtube">
+
+     <div class="Video1" id="youtube">
+      <iframe class="" width="560" height="315" src="https://www.youtube.com/embed/_ZkzgdcLD5w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="Video2" id="youtube2">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ZfK6hyhcUvQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    </div>
+
+    <!-- SnapWidget -->
+  <script src="https://snapwidget.com/js/snapwidget.js"></script>
+  <iframe id="Instagram" src="https://snapwidget.com/embed/622133" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>
+
+    <div class="RedesSociales">
+      <div class="cajaIconos">
+        <ul class="iconosredes">
+          <li> <a href="https://www.youtube.com/watch?v=ZfK6hyhcUvQ"><img src="../img/youtube.png" alt="youtube" id="youtube"/></a></li>
+          <li>  <a href="https://www.instagram.com/carlosarte4/"><img src="../img/instagram.png" alt="instagram"/></a></li>
+          <li> <a href="https://web.facebook.com/carlosarte4"> <img src="../img/facebook.png" alt="facebook" id="facebook"></a></li>
+        </ul>
+      </div>
+        <p id="footerinf">Para colaboraciones, proyectos, pinturas porfavor enviar
+            un correo a jessicaavilat@gmail.com
+        </p>
+    </div>
+
+  </body>
+</html>

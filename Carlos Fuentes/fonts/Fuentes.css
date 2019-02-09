@@ -1,0 +1,21 @@
+@@font-face {
+  font-family: INKFERNO;
+  src: url(INKFERNO.otf);
+}
+
+@@font-face {
+  font-family: PoiretOne-Regular;
+  src: url(PoiretOne-Regular.ttf);
+}
+@font-face{
+  font-family: MavenPro-Medium;
+  src: url(MavenPro-Medium.ttf);
+}
+@font-face {
+  font-family: Montserrat-Light;
+  src: url(Montserrat-Light.ttf);
+}
+@font-face {
+font-family:Gravity-Regular;
+src: url(Gravity-Regular.otf);
+}

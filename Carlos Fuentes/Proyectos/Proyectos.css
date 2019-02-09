@@ -1,0 +1,187 @@
+*{
+  background-color: black;
+  margin: 0;
+  padding: 0;
+
+}
+h1{
+ color: white;
+}
+ul li{
+  color: white;
+}
+h4{
+  color: white;
+}
+
+.Titulo{
+  display: flex;
+  position: relative;
+  top:-340px;
+  font-family:  PoiretOne-Regular;
+  text-align: center;
+  font-size: 3em;
+  letter-spacing: 15px;
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width:600px) {
+  .Titulo{
+      top:-270px;
+  }
+
+}
+
+@media screen and(max-width:900px){
+
+  body{
+    background: black;
+  }
+
+}
+
+.cajapintura{
+  background-image:url(../Obras/Img_Obras/Imagineria_de_ultramar.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 150px;
+  top: 256px;
+  z-index: 3;
+  display: flex;
+  left: 7%;
+  width: 85%;
+}
+
+.proyecto1{
+  height: auto;
+  width: 100%
+}
+.proyecto1 img{
+  position: relative;
+  left: 25%;
+  top: 200px;
+  width: 50%
+}
+
+
+
+
+.Descripcion{
+  position: relative;
+  top: 213px;
+  font-family: Montserrat-Light;
+  padding: 10%;
+
+}
+
+.Presentaciones{
+  padding: 10%;
+  position: relative;
+  top: 200px;
+  font-family: Montserrat-Light;
+  padding-bottom:300px;
+}
+
+.TituloPresentaciones{
+  position: relative;
+  top: 100px;
+  text-align: center;
+  font-family: PoiretOne-Regular;
+  letter-spacing: 4px;
+   font-size: 2em;
+}
+.ListaPresentaciones{
+
+  position: relative;
+  top: 200px;
+  font-family: Montserrat-Light;
+}
+
+
+header li:hover{
+  background-color: transparent;
+  color: #18aebf;
+  transition-duration: 1s;
+}
+
+
+
+.RedesSociales{
+  position:relative;
+  top: 200px;
+  width:100%;
+  background-color: black;;
+  height: 500px;
+  z-index: 2;
+  overflow: hidden;
+}
+.iconosredes li{
+  width: 100%;
+  display: inline;
+  text-align: center;
+}
+.iconosredes li a img{
+  position: relative;
+  top:104px;
+  left: 40%;
+  vertical-align: middle;
+  padding: 5px;
+  height: 50px;
+}
+
+#facebook{
+  position: relative;
+  left: 50%;
+  width: 74px;
+  height:74px;
+  top: 105px;
+}
+#youtube{
+  position: relative;
+  left:30% ;
+}
+
+#footerinf{
+  margin: auto;
+  position: relative;
+  color: white;
+  text-align: center;
+  top: 200px;
+  font-family:   Gravity-Regular;
+  font-size: 100%;
+  letter-spacing: 2px;
+  width: 100%;
+}
+
+@media screen and (max-width:700px){
+
+  .cajaIconos{
+    position: relative;
+    right: 40px;
+  }
+
+}
+
+@media screen and (max-width:450px){
+  .cajaIconos{
+    position: relative;
+    right: 63px;
+  }
+}

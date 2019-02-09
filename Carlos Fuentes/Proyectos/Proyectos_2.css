@@ -1,0 +1,39 @@
+.Presentaciones{
+    padding-top: 150px;
+}
+
+.TituloPresentaciones{
+    text-align: center;
+    font-size: 2em;
+    padding-bottom: 30px;    
+}
+
+.ListaPresentaciones{
+    padding: 0 63px;
+}
+
+.textbio{
+    position: relative;
+    top: 300px;
+    padding: 0 30px;
+    line-height: 25px;
+}
+#first_box{
+    padding-bottom: 100px;
+}
+
+@media screen and (max-width:400px){
+
+    .CajaTitulo{
+        font-size:2em;
+
+    }
+    .ListasPresentaciones{
+        padding: 0 33px;
+    }
+}
+@media screen and (max-width:320px){
+    .CajaTitulo{
+        letter-spacing: 7px;
+    }
+}

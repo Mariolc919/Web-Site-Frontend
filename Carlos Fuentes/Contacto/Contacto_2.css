@@ -1,0 +1,11 @@
+html body{
+    background: none;
+}
+
+h1{
+    color: white;
+}
+
+input[type='text'],[type='email'],select,textarea{
+    border-bottom-color: #a09a97;
+}

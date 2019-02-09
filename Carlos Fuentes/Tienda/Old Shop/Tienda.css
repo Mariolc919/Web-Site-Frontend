@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.cajaimagen{
+    background-image:url(../img/Mural.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 150px;
+    top: 256px;
+    z-index: 3;
+    display: flex;
+    left: 7%;
+    width: 85%;
+}
+
+
+.Titulo{
+    background: none;
+    position: relative;
+    top: 130px;
+    color:white;
+    text-align: center;
+    font-family:PoiretOne-Regular;
+    letter-spacing: 15px;
+    font-size:3em;
+    right:25%;   
+    animation-duration: 3s;
+     animation-name: slidein;
+}
+
+@keyframes slidein{
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+}
+
+.TituloBotellas{
+    background: none;
+    position: relative;
+    top: 450px;
+    color:white;
+    text-align: center;
+    font-family:PoiretOne-Regular;
+    letter-spacing: 15px;
+    font-size:3em;
+    right:0;   
+}
+
+#wrapper{
+    position: relative;
+    top: 600px;
+}
+
+
+.img2{
+    width: 84%;
+}
+
+.caajaseparador{
+    position: relative;
+    top: 850px;
+
+}
+.Tituloseparador{
+    color: white;
+    font-family: PoiretOne-Regular;
+    position: relative;
+    letter-spacing: 15px;
+    font-size:3em;
+    height: 100px;
+    
+    top: 700px;
+    
+}
+
+@media screen and (max-width:770px){
+    .Tituloseparador{
+        text-align-last: center;
+        font-size:2em;
+    }
+    .Titulo{
+        right: 0;    
+    }
+    #mona{
+       
+    }
+}
+
+
+.sep{
+    width: 21%;
+    float: right;;
+    margin:1%;
+}
+@media screen and (max-width:1020px){
+    .sep{
+        margin-right: 2%;
+        width: 40%;
+    }
+}
+@media screen and (max-width:750px){
+    .sep{
+        margin-right: 5%;
+        width: 60%;
+    }
+}
+
+
+
+@media screen and (max-width:450px){
+    .sep{
+        margin-right: 10%;
+    }
+}
+
+
+
+
+
+.RedesSociales{
+    position:relative;
+    top: 1000px;
+    width:100%;
+    background-color: black;;
+    height: 600px;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.iconosredes li{
+    width: 100%;
+    display: inline;
+    text-align: center;
+}
+
+.iconosredes li a img{
+    position: relative;
+    top:176px;
+    left: 40%;
+    vertical-align: middle;
+    padding: 5px;
+    height: 50px;
+}
+
+.cajaIconos{
+      position: relative;
+      left: 5%;
+}
+  
+#facebook{
+    position: relative;
+    left: 61%;
+    width: 74px;
+    height:74px;
+    top: 105px;
+}
+
+#youtube{
+    position: relative;
+    left:18% ;
+    top: 235px;
+}
+  
+#footerinf{
+    margin: auto;
+    position: relative;
+    color: white;
+    text-align: center;
+    top: 200px;
+    font-family:   Gravity-Regular;
+    font-size: 100%;
+    letter-spacing: 2px;
+    width: 100%;
+}
+  
+@media screen and (max-width:700px){
+  
+    .cajaIconos{
+      position: relative;
+      right: 40px;
+    }
+  
+}
+  
+@media screen and (max-width:450px){
+    .cajaIconos{
+      position: relative;
+      right: 63px;
+    }
+}
+
+#mona{
+ 
+}

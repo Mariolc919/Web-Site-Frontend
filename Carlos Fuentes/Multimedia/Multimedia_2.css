@@ -1,0 +1,32 @@
+h1{
+    font-size: 3em;
+    letter-spacing: 10px;
+}
+.titulo{
+    
+    position: relative;
+    top: 150px;
+    text-align: center;
+    
+}
+
+.RedesSociales{
+    top: 700px;
+}
+
+.BoxGallery{
+    position: relative;
+    top: 350px;
+}
+.BoxVideo{
+    margin-top: 10%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+@media screen and (max-width:400px){
+    h1{
+        font-size: 2em;
+    }
+}

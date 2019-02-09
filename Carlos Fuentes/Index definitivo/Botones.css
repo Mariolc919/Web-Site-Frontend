@@ -1,0 +1,119 @@
+#Botonmultimedia{
+    text-decoration: none;
+    background: none;
+    border: solid 2px #474544;
+    color: #474544;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Helvetica', Arial, sans-serif;
+    font-size: 0.875em;
+    font-weight: bold;
+    outline: none;
+    padding: 20px 35px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s;
+  }
+  
+  #Botonmultimedia:hover{
+    background: #474544;
+    color: #F2F3EB;
+    z-index: 2;
+    transition-duration: .5s;
+  }
+
+
+#BotonObras, #BotonTienda{   
+    text-decoration: none;
+    z-index: 2;
+    background: none;
+    border: solid 2px #474544;
+    color: #474544;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Helvetica', Arial, sans-serif;
+    font-size: 0.875em;
+    font-weight: bold;
+    outline: none;
+    padding: 20px 35px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s;
+  
+  }#BotonObras:hover,#BotonTienda:hover{
+    background: #474544;
+    color: #F2F3EB;
+    z-index: 2;
+    transition-duration:.5s;
+  }
+
+  #BotonTienda{
+      position: relative;
+      top:-80px;
+  }
+
+  #BotonObras{
+    position: relative;
+    top:-40px;
+}
+
+
+
+.RedesSociales{
+    position:relative;
+    
+    width:100%;
+    background-color: black;;
+    height: 625px;
+    z-index: 2;
+    overflow: hidden;
+  }
+  .iconosredes li{
+    width: 100%;
+    display: inline;
+    text-align: center;
+  }
+  .iconosredes li a img{
+    position: relative;
+    top:104px;
+    left: 40%;
+    vertical-align: middle;
+    padding: 5px;
+    height: 50px;
+  }
+  
+  #facebook{
+    position: relative;
+    left: 50%;
+    width: 74px;
+    height:74px;
+    top: 105px;
+  }
+  #youtube{
+    position: relative;
+    left:30% ;
+  }
+  
+  #footerinf{
+    margin: auto;
+    position: relative;
+    color: white;
+    text-align: center;
+    top: 200px;
+    font-family:   Gravity-Regular;
+    font-size: 100%;
+    letter-spacing: 2px;
+    width: 100%;
+  }
+  @media screen and (max-width:600px){
+    .cajaredes{
+      position: relative;
+      right: 13%;
+    }
+  }

@@ -1,0 +1,560 @@
+*{
+  background: black;
+  margin:0;
+  padding: 0;
+
+}
+*, ::after, ::before{
+box-sizing: inherit;
+
+}
+
+body{
+  height: 2000px;
+ 
+}
+.fondoencabezado{
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  z-index: 10;
+  background:none;
+  
+}
+
+.contenedor{
+  background: black;
+  width: 100%;
+  z-index: 3;
+  min-width: 0px;
+}
+
+.Encabezado{
+  background: #252323;
+  height: 700px;
+  width: 100%;
+  position: relative;
+  top: 72px;
+}
+.contenido{
+  position: relative;
+  top: -70px;
+}
+
+
+#art{
+  position: fixed;
+  left: 0;
+  top:80px;
+  width:100%;
+  border-radius: ;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  z-index: 1;
+}
+#video_background {
+  display: none;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: 1;
+	overflow: hidden;
+}
+#video_pattern {
+  display: none;
+	background:#fff;
+	position: fixed;
+	opacity: 0.8;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+
+.titulo{
+  text-align: center;
+  position: relative;
+  top: 210px;
+  font-family:PoiretOne-Regular;/*Gravity-Regular*/
+  letter-spacing: 15px;
+  font-size: 5em;
+  color: white;
+  font-weight: bold;
+  z-index: 2;
+  background-color: transparent;
+  animation-duration: 3s;
+  animation-name: titulobaja;
+
+}
+.titulo2{
+  text-align: center;
+  color: white;
+  font-family:  PoiretOne-Regular;
+  letter-spacing: 5px;
+  position: relative;
+  top: 200px;
+  z-index: 2;
+  background-color: transparent;
+  animation-duration: 3s;
+  animation-name: titulobaja;
+
+}
+
+@keyframes titulobaja {
+  from {
+   margin-bottom: 100%;
+   width: 300%
+ }
+
+ to {
+   margin-left: 0%;
+   width: 100%;
+ }
+
+}
+#botonvermas{
+  z-index:3;
+  width:39px;
+  position: relative;
+  top: 430px;
+  left: 48%;
+  height: auto;
+  background: none;
+  transition-duration: 2s;
+}
+.abajo{
+  background: none;
+  outline: 0;
+}
+
+.imagen1{
+  position: relative;
+  left: 80px;
+  z-index: 2;
+}
+
+.Caja1{
+  width: 100%;
+  height: 800px;
+  background: #181a1b;
+  z-index: 4;
+  position: relative;
+  top: 50px;
+  padding-bottom:600px;
+  overflow: hidden;
+}
+.Quiensoytitu{
+  position: relative;
+  top: 81px;
+  text-align: center;
+  background: transparent;
+  color: white;
+  letter-spacing: 9px;
+  font-family: PoiretOne-Regular;
+  text-align: center;
+  font-size: 2em;
+
+
+}
+
+
+.Bio1{
+  color: #7b7b7b;
+  position: absolute;
+  background: none;
+  /*background-color: #181a1b;*/
+  top: 24%;
+  right: -135px;
+  width:60%;
+  box-sizing:border-box;
+
+}
+
+/*#Fotoperfil{
+  position: absolute;
+  width: 29%;
+  border-radius: 150px;
+  top: 37%;
+  left: 2%;
+}
+*/
+/*
+.Bio2{
+  color: #7b7b7b;
+  right: 19%;
+  width: 90%;
+    display: ;
+  position: relative;
+  top: 49%;
+  background-color: #181a1b;
+  box-sizing:border-box;
+}
+
+#Cfuentes{
+  display: none;
+  position:absolute;
+  top:16%;
+  left:51%;
+  border-radius: 25px;
+  width: 35%;
+  box-sizing:border-box;
+}
+
+
+*/
+p{
+  color: white;
+  margin-left: 300px;
+  margin-right: 200px;
+  font-family:   Gravity-Regular;  /*Montserrat-Light;*/
+  font-size: 100%;
+  letter-spacing: 2px;
+
+
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+
+.Multimedia{
+
+  position: relative;
+  top:50px;
+  width: 100%;
+  height: 667px;
+  background-color: white;
+  z-index: 2;
+  overflow: hidden;
+}
+.multimediatitulo{
+  position: relative;
+  top: 40px;
+  background: transparent;
+  font-family: PoiretOne-Regular;
+  letter-spacing: 9px;
+  text-align: center;
+  font-weight: 200;
+}
+
+
+.snapwidget-widget{
+  position: absolute;
+  top: 160px;
+  width: 100%;;
+  left: 15%;
+  overflow: scroll;
+}
+
+
+.divbotonmultimedia{
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#Botonmultimedia{
+  position: relative;
+  top: 520px;
+  text-decoration: none;
+  background: none;
+  border: solid 2px #474544;
+  color: #474544;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Helvetica', Arial, sans-serif;
+  font-size: 0.875em;
+  font-weight: bold;
+  outline: none;
+  padding: 20px 35px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+#Botonmultimedia:hover{
+  background: #474544;
+  color: #F2F3EB;
+  z-index: 2;
+  transition-duration: .5s;
+}
+
+.Obras{
+  width: 100%;
+  height: 780px;
+  background-color: #212121;
+  z-index: 2;
+  position: relative;
+  top: 50px;
+}
+
+.TituloObras{
+  background: transparent;
+  color: white;
+  font-family: PoiretOne-Regular;
+  letter-spacing: 9px;
+  text-align: center;
+  font-weight: 200;
+  position: relative;
+  top: 75px;
+
+}
+
+.ObrasCuadros{
+  top: 120px;
+  position: absolute;
+  left: 2%;
+  background: #212121;
+}
+.ObrasCuadros a{
+  background: #212121;
+  }
+
+#aves{
+  width: 30%;
+  padding: 20px;
+  background: #212121;
+  border-radius: 8%;
+  opacity: .7;
+}
+
+#aves:hover{
+opacity: 1;
+transition: .5s;
+transform:scale(1.03);
+}
+
+#colibri{
+  opacity: .7;
+  width: 30%;
+  padding: 10px;
+  background: #212121;
+  border-radius: 8%;
+}
+#colibri:hover{
+  opacity: 1;
+  transition: .5s;
+  transform:scale(1.03);
+}
+#vuelo{
+  width: 30%;
+  padding: 20px;
+  background: #212121;
+  border-radius: 8%;
+  opacity: .8;
+}
+#vuelo:hover{
+  opacity: 1;
+  transition: .5s;
+  transform:scale(1.03);
+}
+
+#tenedor{
+  display: none;
+}
+
+.cajabotonobras{
+  background:none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#BotonObras{
+  position: absolute;
+  top: 77%;
+  
+  text-decoration: none;
+  z-index: 2;
+  background: none;
+  border: solid 2px #474544;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Helvetica', Arial, sans-serif;
+  font-size: 0.875em;
+  font-weight: bold;
+  outline: none;
+  padding: 20px 35px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+
+}#BotonObras:hover{
+  background: white;
+  color: black;
+  z-index: 2;
+  transition-duration:.5s;
+}
+
+.Proyectos{
+  width: 100%;
+  height: 743px;
+  background-color: white;
+  z-index: 2;
+  position: relative;
+  top: -598px;
+}
+#TituloProyectos{
+  position: relative;
+  top: 50px;
+  background: transparent;
+  color: black;
+  font-family: PoiretOne-Regular;
+  letter-spacing: 9px;
+  text-align: center;
+
+}
+
+#insta3{
+  position: absolute;
+  top: 16%;
+  
+  width: 35%;
+  height:auto;
+}
+
+.caja_boton_proyectos{
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#BotonProyectos{
+  position: absolute;
+  top: 85%;
+  text-decoration: none;
+ background: none;
+  border: solid 2px #474544;
+  color: #474544;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Helvetica', Arial, sans-serif;
+  font-size: 0.875em;
+  font-weight: bold;
+  outline: none;
+  padding: 20px 35px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}#BotonProyectos:hover{
+  background: #474544;
+  color: #F2F3EB;
+  z-index: 2;
+  transition-duration:.5s;
+}
+
+
+.RedesSociales{
+  position:relative;
+  top: 747px;
+  width:100%;
+  background-color: black;;
+  height: 625px;
+  z-index: 2;
+  overflow: hidden;
+}
+.iconosredes li{
+  width: 100%;
+  display: inline;
+  text-align: center;
+}
+.iconosredes li a img{
+  position: relative;
+  top:104px;
+  left: 40%;
+  vertical-align: middle;
+  padding: 5px;
+  height: 50px;
+}
+
+#facebook{
+  position: relative;
+  left: 50%;
+  width: 74px;
+  height:74px;
+  top: 105px;
+}
+#youtube{
+  position: relative;
+  left:30% ;
+}
+
+#footerinf{
+  margin: auto;
+  position: relative;
+  color: white;
+  text-align: center;
+  top: 200px;
+  font-family:   Gravity-Regular;
+  font-size: 100%;
+  letter-spacing: 2px;
+  width: 100%;
+}
+
+@media screen and (max-width:600px){
+  .cajaredes{
+    position: relative;
+    right: 13%;
+  }
+}
+
+
+.boxbanenr{
+  width: 100%;
+  height: 100px;
+  background: #212121;
+}
+
+.fotoperfil{
+  position: absolute;
+  top: 40%;
+  left: 20px;
+  background: none;
+  animation-name: perfilDesliza;
+  animation-duration: 6s;
+
+}
+@keyframes perfilDesliza {
+  from {
+    margin-left: 100%;
+    width: 300%
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+#Fotoperfil{
+  width: 320px;
+  border-radius: 100%;
+
+}

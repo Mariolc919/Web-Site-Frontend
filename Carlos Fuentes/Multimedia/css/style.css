@@ -1,0 +1,177 @@
+@import url(https://markmurray.co/codepen/customstyle.css);
+@import url(https://fonts.googleapis.com/css?family=Raleway:100);
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  background: #111;
+  height: 100%;
+  font-family: Raleway, sans-serif;
+}
+
+.container {
+  
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  -moz-transition: all 0.3s ease 0.6s;
+  -o-transition: all 0.3s ease 0.6s;
+  -webkit-transition: all 0.3s ease;
+  -webkit-transition-delay: 0.6s;
+  transition: all 0.3s ease 0.6s;
+  z-index: 10;
+  padding: 2em;
+  position: relative;
+}
+
+.container.nav-open {
+  margin-top: 8em;
+  width: 90%;
+  transition: all 0.3s ease;
+}
+
+/*
+  menu icon css3
+*/
+.menu-icon {
+  left: 30px;
+  position: relative;
+  display: block;
+  width: 2.5em;
+  height: 2.5em;
+  cursor: pointer;
+}
+.menu-icon:hover span {
+  background: #222;
+}
+.menu-icon:hover span:before, .menu-icon:hover span:after {
+  background: #222;
+}
+
+.menu-icon > span {
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 100%;
+  height: 0.25em;
+  background-color: #bbbbbb;
+  border-radius: 3px;
+  transition: background 0.25s ease, -webkit-transform 0.3s;
+  transition: transform 0.3s, background 0.25s ease;
+  transition: transform 0.3s, background 0.25s ease, -webkit-transform 0.3s;
+}
+
+.menu-icon > span:before,
+.menu-icon > span:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #bbbbbb;
+  border-radius: 3px;
+  transition: background 0.25s ease, -webkit-transform 0.3s;
+  transition: transform 0.3s, background 0.25s ease;
+  transition: transform 0.3s, background 0.25s ease, -webkit-transform 0.3s;
+}
+
+.menu-icon > span:before {
+  -webkit-transform: translateY(-0.75em);
+  transform: translateY(-0.75em);
+}
+
+.menu-icon > span:after {
+  -webkit-transform: translateY(0.75em);
+  transform: translateY(0.75em);
+}
+
+/* OPENED */
+.menu-icon.open {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.menu-icon.open > span:before {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.menu-icon.open > span:after {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 5%;
+  color: white;
+  z-index: 1;
+}
+nav ul li.animate {
+  top: 0;
+}
+nav ul li {
+  display: inline-block;
+  text-align: center;
+  margin: 1em 2em;
+  cursor: pointer;
+  position: relative;
+  top: -8em;
+}
+nav ul li:nth-child(1) {
+  -moz-transition: top 0.3s ease 0.15s;
+  -o-transition: top 0.3s ease 0.15s;
+  -webkit-transition: top 0.3s ease;
+  -webkit-transition-delay: 0.15s;
+  transition: top 0.3s ease 0.15s;
+}
+nav ul li:nth-child(2) {
+  -moz-transition: top 0.3s ease 0.2s;
+  -o-transition: top 0.3s ease 0.2s;
+  -webkit-transition: top 0.3s ease;
+  -webkit-transition-delay: 0.2s;
+  transition: top 0.3s ease 0.2s;
+}
+nav ul li:nth-child(3) {
+  -moz-transition: top 0.3s ease 0.25s;
+  -o-transition: top 0.3s ease 0.25s;
+  -webkit-transition: top 0.3s ease;
+  -webkit-transition-delay: 0.25s;
+  transition: top 0.3s ease 0.25s;
+}
+nav ul li:nth-child(4) {
+  -moz-transition: top 0.3s ease 0.3s;
+  -o-transition: top 0.3s ease 0.3s;
+  -webkit-transition: top 0.3s ease;
+  -webkit-transition-delay: 0.3s;
+  transition: top 0.3s ease 0.3s;
+}
+nav ul li:nth-child(5) {
+  -moz-transition: top 0.3s ease 0.35s;
+  -o-transition: top 0.3s ease 0.35s;
+  -webkit-transition: top 0.3s ease;
+  -webkit-transition-delay: 0.35s;
+  transition: top 0.3s ease 0.35s;
+}
+nav ul li:hover {
+  opacity: 1;
+}
+nav ul li i {
+  font-size: 1.5em;
+  background: #10d7af;
+  padding: 0.75em;
+  border-radius: 50%;
+  color: white;
+  display: inline-block;
+  overflow: hidden;
+  text-shadow: 0px 0px #0ca888, 1px 1px #0ca888, 2px 2px #0ca888, 3px 3px #0ca888, 4px 4px #0ca888, 5px 5px #0ca888, 6px 6px #0ca888, 7px 7px #0ca888, 8px 8px #0ca888, 9px 9px #0ca888, 10px 10px #0ca888, 11px 11px #0ca888, 12px 12px #0ca888, 13px 13px #0ca888, 14px 14px #0ca888, 15px 15px #0ca888, 16px 16px #0ca888, 17px 17px #0ca888, 18px 18px #0ca888, 19px 19px #0ca888, 20px 20px #0ca888, 21px 21px #0ca888, 22px 22px #0ca888, 23px 23px #0ca888, 24px 24px #0ca888, 25px 25px #0ca888, 26px 26px #0ca888, 27px 27px #0ca888, 28px 28px #0ca888, 29px 29px #0ca888, 30px 30px #0ca888, 31px 31px #0ca888, 32px 32px #0ca888, 33px 33px #0ca888, 34px 34px #0ca888, 35px 35px #0ca888, 36px 36px #0ca888, 37px 37px #0ca888, 38px 38px #0ca888, 39px 39px #0ca888, 40px 40px #0ca888, 41px 41px #0ca888, 42px 42px #0ca888, 43px 43px #0ca888, 44px 44px #0ca888, 45px 45px #0ca888, 46px 46px #0ca888, 47px 47px #0ca888, 48px 48px #0ca888, 49px 49px #0ca888, 50px 50px #0ca888, 51px 51px #0ca888, 52px 52px #0ca888, 53px 53px #0ca888, 54px 54px #0ca888, 55px 55px #0ca888, 56px 56px #0ca888, 57px 57px #0ca888, 58px 58px #0ca888, 59px 59px #0ca888, 60px 60px #0ca888;
+}
+nav ul li h4 {
+  line-height: 2.5;
+}
+
+h1{
+  text-align: center;
+  font-size: 4em;
+}
